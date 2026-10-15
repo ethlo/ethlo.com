@@ -1,0 +1,43 @@
+{
+  "github": {
+    "user": "ethlo",
+    "excludeForks": true,
+    "excludeArchived": false,
+    "includeTopic": null,
+    "exclude": [
+      "ethlo",
+      "ethlo.github.com",
+      "gcode-stats",
+      "spring-actuator-addons",
+      "greencode",
+      "flexwsdl",
+      "openapi-tools",
+      "tindvik",
+      "jaxb2-sbdh",
+      "jaxb2-epcis",
+      "jaxb2-despatch-advice",
+      "webclient-security",
+      "castsaver",
+      "0gly",
+      "epcis-test",
+      "hmbk",
+      "logback-filters",
+      "macbook-pro-on-linux",
+      "trivial-deb",
+      "stop",
+      "gcode_stats",
+      "jard",
+      "api-documenter",
+      "blackbox-it",
+      "cache-sync",
+      "eclipselink-maven-plugin-test",
+      "ebs-server",
+      "ethlo.com"
+    ]
+  },
+  "youtube": {
+    "channelId": "UCxhi3ZkJ8SdAMvSj_XSAKpA",
+    "maxVideos": 0,
+    "excludeIds": []
+  }
+}
