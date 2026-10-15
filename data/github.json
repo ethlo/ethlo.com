@@ -270,6 +270,19 @@
     "updated_at": "2025-01-16T12:46:28Z"
   },
   {
+    "name": "ethlo.com",
+    "html_url": "https://github.com/ethlo/ethlo.com",
+    "description": null,
+    "language": "CSS",
+    "topics": [],
+    "fork": false,
+    "archived": false,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "pushed_at": "2026-10-15T09:39:56Z",
+    "updated_at": "2026-10-15T09:41:48Z"
+  },
+  {
     "name": "flexwsdl",
     "html_url": "https://github.com/ethlo/flexwsdl",
     "description": "WSDL builder that allows inclusion of a schema/schemas generated on the fly",
