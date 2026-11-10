@@ -26,19 +26,6 @@
     "updated_at": "2026-11-10T07:14:33Z"
   },
   {
-    "name": "async-retry",
-    "html_url": "https://github.com/ethlo/async-retry",
-    "description": "Asynchronous retrying for Java 7/8",
-    "language": "Java",
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2015-05-24T18:03:13Z",
-    "updated_at": "2018-02-06T14:44:50Z"
-  },
-  {
     "name": "blackbox-it",
     "html_url": "https://github.com/ethlo/blackbox-it",
     "description": "Blackbox API test suite",
@@ -50,19 +37,6 @@
     "forks_count": 0,
     "pushed_at": "2016-12-23T08:51:26Z",
     "updated_at": "2023-06-26T05:49:40Z"
-  },
-  {
-    "name": "cache-sync",
-    "html_url": "https://github.com/ethlo/cache-sync",
-    "description": "Syncronize local caches across cluster",
-    "language": null,
-    "topics": [],
-    "fork": false,
-    "archived": true,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2022-12-28T00:41:37Z",
-    "updated_at": "2023-07-31T08:21:59Z"
   },
   {
     "name": "castsaver",
@@ -95,8 +69,8 @@
     "archived": false,
     "stargazers_count": 5,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T06:51:39Z",
-    "updated_at": "2026-11-10T07:10:30Z"
+    "pushed_at": "2026-11-10T07:40:20Z",
+    "updated_at": "2026-11-10T07:30:06Z"
   },
   {
     "name": "clackshack",
@@ -135,8 +109,8 @@
     "archived": false,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T07:03:13Z",
-    "updated_at": "2026-11-10T07:10:19Z"
+    "pushed_at": "2026-11-10T08:42:20Z",
+    "updated_at": "2026-11-10T08:42:26Z"
   },
   {
     "name": "clearsky-confluence",
@@ -219,7 +193,7 @@
     "archived": false,
     "stargazers_count": 5,
     "forks_count": 3,
-    "pushed_at": "2026-11-04T12:29:13Z",
+    "pushed_at": "2026-11-10T08:29:57Z",
     "updated_at": "2026-11-04T12:26:56Z"
   },
   {
@@ -239,8 +213,8 @@
     "archived": false,
     "stargazers_count": 5,
     "forks_count": 2,
-    "pushed_at": "2026-11-10T06:51:43Z",
-    "updated_at": "2026-11-10T07:10:32Z"
+    "pushed_at": "2026-11-10T07:40:21Z",
+    "updated_at": "2026-11-10T07:30:10Z"
   },
   {
     "name": "date-time-wars",
@@ -259,8 +233,8 @@
     "archived": false,
     "stargazers_count": 1,
     "forks_count": 0,
-    "pushed_at": "2026-09-22T08:23:52Z",
-    "updated_at": "2026-11-10T07:10:31Z"
+    "pushed_at": "2026-11-10T08:30:06Z",
+    "updated_at": "2026-11-10T08:08:24Z"
   },
   {
     "name": "debrepo",
@@ -311,34 +285,8 @@
     "archived": false,
     "stargazers_count": 37,
     "forks_count": 17,
-    "pushed_at": "2026-11-10T06:51:29Z",
-    "updated_at": "2026-11-10T07:10:21Z"
-  },
-  {
-    "name": "eclipselink-maven-plugin-test",
-    "html_url": "https://github.com/ethlo/eclipselink-maven-plugin-test",
-    "description": "Test suite for eclipselink-maven-plugin",
-    "language": "Java",
-    "topics": [],
-    "fork": false,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2017-03-23T20:10:06Z",
-    "updated_at": "2017-02-23T07:00:11Z"
-  },
-  {
-    "name": "eclipselink-static-weave-plugin",
-    "html_url": "https://github.com/ethlo/eclipselink-static-weave-plugin",
-    "description": "This repository contains a Maven plugin which does the static weaving for EclipseLink",
-    "language": "Java",
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2017-01-14T11:52:18Z",
-    "updated_at": "2019-03-28T10:42:58Z"
+    "pushed_at": "2026-11-10T07:40:18Z",
+    "updated_at": "2026-11-10T07:29:58Z"
   },
   {
     "name": "epcis-test",
@@ -363,47 +311,21 @@
     "archived": false,
     "stargazers_count": 1,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T06:52:22Z",
-    "updated_at": "2025-01-16T12:46:28Z"
+    "pushed_at": "2026-11-10T07:40:28Z",
+    "updated_at": "2026-11-10T07:29:40Z"
   },
   {
     "name": "ethlo.com",
     "html_url": "https://github.com/ethlo/ethlo.com",
     "description": "Source for ethlo.com",
-    "language": "CSS",
+    "language": "HTML",
     "topics": [],
     "fork": false,
     "archived": false,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T07:15:18Z",
-    "updated_at": "2026-11-10T07:15:23Z"
-  },
-  {
-    "name": "flexwsdl",
-    "html_url": "https://github.com/ethlo/flexwsdl",
-    "description": "WSDL builder that allows inclusion of a schema/schemas generated on the fly",
-    "language": null,
-    "topics": [],
-    "fork": false,
-    "archived": true,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2013-06-28T07:08:47Z",
-    "updated_at": "2023-01-28T10:04:36Z"
-  },
-  {
-    "name": "fork_govway",
-    "html_url": "https://github.com/ethlo/fork_govway",
-    "description": "API Gateway per la Pubblica Amministrazione italiana",
-    "language": null,
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2024-01-23T17:34:53Z",
-    "updated_at": "2024-01-24T12:05:39Z"
+    "pushed_at": "2026-11-10T08:43:08Z",
+    "updated_at": "2026-11-10T08:43:14Z"
   },
   {
     "name": "gcode-stats",
@@ -439,34 +361,8 @@
     "archived": false,
     "stargazers_count": 2,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T06:52:04Z",
-    "updated_at": "2026-11-10T07:10:23Z"
-  },
-  {
-    "name": "gpslogger",
-    "html_url": "https://github.com/ethlo/gpslogger",
-    "description": ":satellite: Lightweight GPS Logging Application For Android. Available on the Android Market as \"GPSLogger for Android\"",
-    "language": "Java",
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2018-01-11T22:29:14Z",
-    "updated_at": "2018-01-30T14:18:37Z"
-  },
-  {
-    "name": "gradle-maven-settings-plugin",
-    "html_url": "https://github.com/ethlo/gradle-maven-settings-plugin",
-    "description": "Gradle Maven settings plugin",
-    "language": null,
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2020-02-11T20:06:47Z",
-    "updated_at": "2021-11-09T12:08:12Z"
+    "pushed_at": "2026-11-10T07:40:28Z",
+    "updated_at": "2026-11-10T07:30:29Z"
   },
   {
     "name": "greencode",
@@ -519,47 +415,8 @@
     "archived": false,
     "stargazers_count": 41,
     "forks_count": 11,
-    "pushed_at": "2026-11-10T06:51:25Z",
-    "updated_at": "2026-11-10T07:10:20Z"
-  },
-  {
-    "name": "jard",
-    "html_url": "https://github.com/ethlo/jard",
-    "description": "Simple extraction of statistics from JMeter CSV files",
-    "language": "Python",
-    "topics": [],
-    "fork": false,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2018-08-08T20:47:55Z",
-    "updated_at": "2018-08-08T20:47:56Z"
-  },
-  {
-    "name": "JavaFastPFOR",
-    "html_url": "https://github.com/ethlo/JavaFastPFOR",
-    "description": "A simple integer compression library in Java ",
-    "language": null,
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2024-02-28T17:58:24Z",
-    "updated_at": "2024-12-18T14:38:24Z"
-  },
-  {
-    "name": "JavaReedSolomon",
-    "html_url": "https://github.com/ethlo/JavaReedSolomon",
-    "description": "Backblaze Reed-Solomon Implementation in Java",
-    "language": "Java",
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 1,
-    "forks_count": 0,
-    "pushed_at": "2017-12-30T09:46:33Z",
-    "updated_at": "2023-07-29T19:03:16Z"
+    "pushed_at": "2026-11-10T07:40:17Z",
+    "updated_at": "2026-11-10T07:29:55Z"
   },
   {
     "name": "jaxb2-despatch-advice",
@@ -584,8 +441,8 @@
     "archived": false,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T06:52:09Z",
-    "updated_at": "2025-03-21T12:04:27Z"
+    "pushed_at": "2026-11-10T07:40:26Z",
+    "updated_at": "2026-11-10T07:30:33Z"
   },
   {
     "name": "jaxb2-sbdh",
@@ -617,19 +474,6 @@
     "updated_at": "2022-11-02T02:09:24Z"
   },
   {
-    "name": "json-schema-validator",
-    "html_url": "https://github.com/ethlo/json-schema-validator",
-    "description": "A fast Java JSON schema validator that supports draft V4, V6, V7, V2019-09 and V2020-12",
-    "language": "Java",
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2025-07-28T14:45:56Z",
-    "updated_at": "2024-04-03T07:02:33Z"
-  },
-  {
     "name": "jsons2xsd",
     "html_url": "https://github.com/ethlo/jsons2xsd",
     "description": "Highly configurable converter from JSON-schema to XML-schema (XSD).",
@@ -649,21 +493,8 @@
     "archived": false,
     "stargazers_count": 91,
     "forks_count": 43,
-    "pushed_at": "2026-11-10T06:50:46Z",
-    "updated_at": "2026-11-10T07:10:20Z"
-  },
-  {
-    "name": "keycloak-bcrypt",
-    "html_url": "https://github.com/ethlo/keycloak-bcrypt",
-    "description": "Add BCrypt password provider in Keycloak",
-    "language": "Java",
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2020-03-05T12:01:59Z",
-    "updated_at": "2020-03-05T12:02:01Z"
+    "pushed_at": "2026-11-10T07:40:16Z",
+    "updated_at": "2026-11-10T07:29:50Z"
   },
   {
     "name": "keyvalue",
@@ -691,8 +522,8 @@
     "archived": false,
     "stargazers_count": 6,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T06:51:47Z",
-    "updated_at": "2026-11-10T07:10:33Z"
+    "pushed_at": "2026-11-10T07:40:22Z",
+    "updated_at": "2026-11-10T07:30:14Z"
   },
   {
     "name": "krasa-jaxb-tools",
@@ -724,21 +555,8 @@
     "archived": false,
     "stargazers_count": 2,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T06:51:52Z",
-    "updated_at": "2025-11-08T05:48:19Z"
-  },
-  {
-    "name": "lamebda-samples",
-    "html_url": "https://github.com/ethlo/lamebda-samples",
-    "description": "Sample projects for ethlo Lamebda",
-    "language": null,
-    "topics": [],
-    "fork": false,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2024-10-19T07:41:47Z",
-    "updated_at": "2024-10-19T07:41:50Z"
+    "pushed_at": "2026-11-10T07:40:23Z",
+    "updated_at": "2026-11-10T07:30:18Z"
   },
   {
     "name": "lapstats",
@@ -765,19 +583,6 @@
     "forks_count": 0,
     "pushed_at": "2015-01-29T13:11:15Z",
     "updated_at": "2026-08-13T17:32:01Z"
-  },
-  {
-    "name": "macbook-pro-on-linux",
-    "html_url": "https://github.com/ethlo/macbook-pro-on-linux",
-    "description": "Personal collection of used scrips to improve the Ubuntu 14.10+ experience on a Macbook Pro 11,2",
-    "language": "Shell",
-    "topics": [],
-    "fork": false,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2015-01-29T19:16:45Z",
-    "updated_at": "2015-01-29T19:19:59Z"
   },
   {
     "name": "mock-eu-registry",
@@ -808,8 +613,8 @@
     "archived": false,
     "stargazers_count": 2,
     "forks_count": 0,
-    "pushed_at": "2025-09-18T11:08:08Z",
-    "updated_at": "2026-11-10T07:10:33Z"
+    "pushed_at": "2026-11-10T08:30:04Z",
+    "updated_at": "2026-11-10T08:08:21Z"
   },
   {
     "name": "my2ch",
@@ -857,32 +662,6 @@
     "updated_at": "2025-07-20T22:04:27Z"
   },
   {
-    "name": "pebble",
-    "html_url": "https://github.com/ethlo/pebble",
-    "description": "Java Templating Engine",
-    "language": "Java",
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2016-04-21T07:29:46Z",
-    "updated_at": "2016-03-06T20:56:39Z"
-  },
-  {
-    "name": "protobuf",
-    "html_url": "https://github.com/ethlo/protobuf",
-    "description": "Protocol Buffers - Google's data interchange format",
-    "language": null,
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2022-12-06T18:07:57Z",
-    "updated_at": "2022-12-06T15:14:53Z"
-  },
-  {
     "name": "qjc",
     "html_url": "https://github.com/ethlo/qjc",
     "description": "An easy-to-use tool allowing for on-the-fly reloading of classes useful for dynamic configuration and scripting.",
@@ -924,32 +703,6 @@
     "updated_at": "2026-11-10T07:10:18Z"
   },
   {
-    "name": "scannotation",
-    "html_url": "https://github.com/ethlo/scannotation",
-    "description": null,
-    "language": "Java",
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2016-06-30T12:05:08Z",
-    "updated_at": "2016-06-30T11:27:07Z"
-  },
-  {
-    "name": "simple-modular-demo",
-    "html_url": "https://github.com/ethlo/simple-modular-demo",
-    "description": "A simple repository to experiment with modular Java projects",
-    "language": "Java",
-    "topics": [],
-    "fork": false,
-    "archived": false,
-    "stargazers_count": 1,
-    "forks_count": 1,
-    "pushed_at": "2025-02-14T12:34:59Z",
-    "updated_at": "2025-02-14T12:35:02Z"
-  },
-  {
     "name": "source-extractor-maven-plugin",
     "html_url": "https://github.com/ethlo/source-extractor-maven-plugin",
     "description": "Maven plugin that extracts code from real source files into Markdown/HTML docs, so examples stay compiled and tested.",
@@ -964,8 +717,8 @@
     "archived": false,
     "stargazers_count": 1,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T06:51:56Z",
-    "updated_at": "2026-11-10T07:10:34Z"
+    "pushed_at": "2026-11-10T07:40:24Z",
+    "updated_at": "2026-11-10T07:30:22Z"
   },
   {
     "name": "spring-actuator-addons",
@@ -981,19 +734,6 @@
     "updated_at": "2026-11-10T07:14:34Z"
   },
   {
-    "name": "spring-startup-progress",
-    "html_url": "https://github.com/ethlo/spring-startup-progress",
-    "description": null,
-    "language": "Java",
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2015-09-04T15:21:33Z",
-    "updated_at": "2018-01-13T06:18:37Z"
-  },
-  {
     "name": "spring-tx-cache-decorator",
     "html_url": "https://github.com/ethlo/spring-tx-cache-decorator",
     "description": "Transaction-aware cache decorator that holds cache values transiently until commit to avoid polluting the cache with invalid values in case of a rollback.",
@@ -1002,8 +742,8 @@
       "cache",
       "cache-control",
       "java",
+      "showcase",
       "spring",
-      "spring-da",
       "spring-data-jpa",
       "transactional"
     ],
@@ -1011,21 +751,8 @@
     "archived": false,
     "stargazers_count": 4,
     "forks_count": 2,
-    "pushed_at": "2026-11-10T06:52:00Z",
-    "updated_at": "2025-08-13T11:20:33Z"
-  },
-  {
-    "name": "springfox",
-    "html_url": "https://github.com/ethlo/springfox",
-    "description": "Automated JSON API documentation for API's built with Spring",
-    "language": "Groovy",
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2016-12-01T10:02:51Z",
-    "updated_at": "2016-12-20T07:25:09Z"
+    "pushed_at": "2026-11-10T07:40:25Z",
+    "updated_at": "2026-11-10T07:42:29Z"
   },
   {
     "name": "stop",
@@ -1039,32 +766,6 @@
     "forks_count": 0,
     "pushed_at": "2014-09-25T09:45:53Z",
     "updated_at": "2026-11-10T07:14:35Z"
-  },
-  {
-    "name": "swagger-codegen-tooling",
-    "html_url": "https://github.com/ethlo/swagger-codegen-tooling",
-    "description": "Swagger Codegen Tooling",
-    "language": "Java",
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2016-05-09T12:45:14Z",
-    "updated_at": "2016-04-28T06:04:47Z"
-  },
-  {
-    "name": "swagger-ui",
-    "html_url": "https://github.com/ethlo/swagger-ui",
-    "description": "Swagger UI is a dependency-free collection of HTML, Javascript, and CSS assets that dynamically generate beautiful documentation from a Swagger-compliant API.",
-    "language": "JavaScript",
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2016-05-02T16:00:20Z",
-    "updated_at": "2016-05-02T18:02:47Z"
   },
   {
     "name": "tenkemakker",
@@ -1093,32 +794,6 @@
     "updated_at": "2018-07-04T18:19:49Z"
   },
   {
-    "name": "trivial-deb",
-    "html_url": "https://github.com/ethlo/trivial-deb",
-    "description": "Simple script to generate a trivial debian repository given a directory of debs",
-    "language": "Shell",
-    "topics": [],
-    "fork": false,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2015-05-04T13:13:31Z",
-    "updated_at": "2015-05-04T13:13:32Z"
-  },
-  {
-    "name": "typeof",
-    "html_url": "https://github.com/ethlo/typeof",
-    "description": "instanceof operator and Visitor pattern replacement in Java 8",
-    "language": "Java",
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 1,
-    "forks_count": 0,
-    "pushed_at": "2014-12-07T14:12:12Z",
-    "updated_at": "2018-03-05T15:48:46Z"
-  },
-  {
     "name": "webclient-security",
     "html_url": "https://github.com/ethlo/webclient-security",
     "description": "Project goal is to implement easy to utilize tools and filters for securing client web applications from themselves, like CSRF, click-jacking, etc",
@@ -1130,32 +805,6 @@
     "forks_count": 2,
     "pushed_at": "2021-03-16T18:55:13Z",
     "updated_at": "2023-01-28T10:04:36Z"
-  },
-  {
-    "name": "XMLScalpel",
-    "html_url": "https://github.com/ethlo/XMLScalpel",
-    "description": "Java library for extracting XML elements from a file by byte offset.",
-    "language": null,
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2022-11-03T18:58:10Z",
-    "updated_at": "2024-07-04T14:28:14Z"
-  },
-  {
-    "name": "zally",
-    "html_url": "https://github.com/ethlo/zally",
-    "description": "A minimalistic, simple-to-use API linter",
-    "language": null,
-    "topics": [],
-    "fork": true,
-    "archived": false,
-    "stargazers_count": 0,
-    "forks_count": 0,
-    "pushed_at": "2025-07-04T14:48:39Z",
-    "updated_at": "2025-09-05T07:42:40Z"
   },
   {
     "name": "zally-maven-plugin",
@@ -1176,7 +825,7 @@
     "archived": false,
     "stargazers_count": 13,
     "forks_count": 6,
-    "pushed_at": "2026-11-10T06:51:34Z",
-    "updated_at": "2026-11-10T07:10:22Z"
+    "pushed_at": "2026-11-10T07:40:19Z",
+    "updated_at": "2026-11-10T07:30:03Z"
   }
 ]
