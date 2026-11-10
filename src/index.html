@@ -1,292 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ethlo</title>
-    <meta name="description" content="">
     <meta charset="utf-8">
-    <!--[if IE]>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ethlo · Morten Haraldsen</title>
+    <meta name="description" content="Morten Haraldsen (ethlo): 25 years of building software that runs in production. Open source, side projects, and hardware that talks to software.">
+    <meta name="theme-color" content="#0E1013">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
-          integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
-    <link rel="stylesheet" href="css/site.css"/>
-
-    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#333333">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#FF5A1F">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;800&family=JetBrains+Mono:wght@400;500&display=swap">
+
+    <style>
+        :root {
+            --ink: #0E1013; --surface: #16191D; --raised: #1C1F24; --line: #2A2D33;
+            --text: #FFFFFF; --soft: #C9CBD1; --muted: #A9ADB5; --faint: #8E929B;
+            --accent: #FF5A1F;
+            --mono: 'JetBrains Mono', ui-monospace, monospace;
+            --wrap: 1200px; --gutter: clamp(16px, 4vw, 48px); --section: clamp(64px, 9vw, 120px);
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; background: var(--ink); color: var(--text); font-family: 'Inter Tight', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+        a { color: var(--text); text-decoration: none; }
+        a:hover { color: var(--accent); }
+        a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+        img { max-width: 100%; display: block; }
+        h1, h2, h3, p { margin: 0; }
+
+        .wrap { max-width: var(--wrap); margin: 0 auto; padding-left: var(--gutter); padding-right: var(--gutter); }
+        .section { padding-top: var(--section); padding-bottom: var(--section); }
+        .band { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+        .rule { border-top: 1px solid var(--line); }
+        .label { font-family: var(--mono); font-size: 14px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+        .accent { color: var(--accent); }
+        .muted { color: var(--muted); }
+        .stack { display: flex; flex-direction: column; }
+        .head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px 48px; margin-bottom: 40px; }
+        .head > div { flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
+        .head > p { flex: 1 1 300px; max-width: 400px; font-size: 17px; line-height: 1.55; color: var(--muted); }
+        .h2 { font-size: clamp(44px, 6vw, 80px); line-height: .96; font-weight: 800; letter-spacing: -.05em; }
+        .grid { display: grid; gap: 16px; }
+        .link-under { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 600; font-size: 16px; border-bottom: 2px solid var(--text); align-self: flex-start; }
+        .arrow { width: 15px; height: 15px; }
+
+        /* header */
+        .site-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 24px; padding-bottom: 24px; }
+        .site-header img { height: 30px; width: auto; }
+        .site-header nav { display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 16px; font-weight: 600; }
+        .site-header nav a { padding: 10px 0; }
+
+        /* hero */
+        .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 56px; padding-top: clamp(48px, 9vw, 120px); padding-bottom: clamp(56px, 8vw, 112px); }
+        .hero-text { flex: 999 1 560px; min-width: 0; gap: 28px; }
+        .hero h1 { font-size: clamp(52px, 8.5vw, 120px); line-height: .92; font-weight: 800; letter-spacing: -.055em; }
+        .hero h1 span { display: block; }
+        .hero .lede { max-width: 580px; font-size: clamp(18px, 1.6vw, 21px); line-height: 1.5; font-weight: 500; color: var(--muted); }
+        .buttons { display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px; }
+        .btn { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 26px; font-weight: 600; font-size: 17px; }
+        .btn-primary { background: var(--accent); color: var(--ink); }
+        .btn-primary:hover { color: var(--ink); background: #FF7A4A; }
+        .btn-ghost { border: 2px solid var(--text); }
+        .hero-mark { flex: 1 1 300px; max-width: 400px; margin: 0 auto; overflow-wrap: anywhere; font-family: var(--mono); font-size: 15px; line-height: 1.7; color: var(--muted); background: var(--surface); border: 1px solid var(--line); padding: 24px; }
+        .hero-mark b { color: var(--text); font-weight: 500; }
+
+        .strip p { display: flex; flex-wrap: wrap; gap: 8px 28px; padding-top: 18px; padding-bottom: 18px; font-family: var(--mono); font-size: 15px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; }
+
+        /* projects */
+        .featured { grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); }
+        .card { background: var(--surface); border: 1px solid var(--line); padding: clamp(24px, 3vw, 40px); gap: 18px; }
+        .card-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-family: var(--mono); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+        .card h3 { font-size: clamp(48px, 5vw, 64px); line-height: 1; font-weight: 800; letter-spacing: -.05em; }
+        .tagline { font-size: 22px; line-height: 1.3; font-weight: 600; }
+        .summary { font-size: 16px; line-height: 1.6; color: var(--muted); }
+        .meta { padding-top: 14px; border-top: 1px solid var(--line); font-family: var(--mono); font-size: 13px; line-height: 1.7; color: var(--soft); }
+        .libs { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); margin-top: 20px; }
+        .lib { border: 1px solid var(--line); padding: 26px; gap: 10px; }
+        .lib-name { font-size: 24px; font-weight: 800; letter-spacing: -.03em; overflow-wrap: anywhere; }
+        .lib-desc { font-size: 15px; line-height: 1.55; color: var(--muted); }
+        .lib-meta { font-family: var(--mono); font-size: 12px; color: var(--soft); padding-top: 6px; margin-top: auto; }
+
+        /* notes */
+        .note-feature { background: var(--accent); color: var(--ink); padding: clamp(28px, 4vw, 56px); gap: 22px; margin-bottom: 16px; }
+        .note-feature .label { color: var(--ink); font-size: 13px; }
+        .note-feature h3 { max-width: 860px; font-size: clamp(34px, 4.5vw, 60px); line-height: 1; font-weight: 800; letter-spacing: -.045em; }
+        .note-feature p { max-width: 680px; font-size: 18px; line-height: 1.55; font-weight: 500; }
+        .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding-top: 6px; font-family: var(--mono); font-size: 14px; font-weight: 500; }
+        .flow span { padding: 10px 14px; border: 2px solid var(--ink); }
+        .flow span:last-child { background: var(--ink); color: var(--accent); }
+        .notes { grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); }
+        .note { background: var(--ink); border: 1px solid var(--line); padding: 32px; gap: 14px; }
+        .note .label { font-size: 13px; }
+        .note h3 { font-size: 26px; line-height: 1.15; font-weight: 800; letter-spacing: -.03em; }
+        .note p { font-size: 16px; line-height: 1.6; color: var(--muted); }
+
+        /* why */
+        .why-head { gap: 24px; max-width: 920px; margin-bottom: clamp(48px, 6vw, 80px); }
+        .why-head h2 { font-size: clamp(48px, 7.5vw, 104px); line-height: .94; font-weight: 800; letter-spacing: -.055em; }
+        .why-head h2 span { display: block; }
+        .why-head p { max-width: 680px; font-size: clamp(18px, 1.6vw, 21px); line-height: 1.5; font-weight: 500; color: var(--muted); }
+        .pillars { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 40px 32px; }
+        .pillar { border-top: 2px solid var(--text); padding-top: 20px; gap: 14px; }
+        .pillar .num { font-family: var(--mono); font-size: 14px; font-weight: 500; color: var(--accent); }
+        .pillar h3 { font-size: clamp(36px, 3.6vw, 48px); line-height: 1; font-weight: 800; letter-spacing: -.045em; }
+        .pillar p { font-size: 17px; line-height: 1.55; color: var(--muted); }
+
+        /* videos */
+        .videos { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+        .video { gap: 12px; }
+        .video img { aspect-ratio: 16 / 9; width: 100%; object-fit: cover; background: var(--raised); }
+        .video span { font-size: 17px; line-height: 1.35; font-weight: 600; }
+
+        /* about */
+        .about { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 40px 64px; }
+        .about p { font-size: 18px; line-height: 1.6; color: var(--soft); }
+        .about .lead { font-size: clamp(32px, 4vw, 52px); line-height: 1; font-weight: 800; letter-spacing: -.045em; color: var(--text); }
+        .about p + p { margin-top: 18px; }
+        .about em { font-family: var(--mono); font-style: normal; color: var(--accent); }
+
+        /* footer */
+        .site-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-top: 32px; padding-bottom: 40px; font-family: var(--mono); font-size: 13px; color: var(--faint); }
+        .site-footer img { height: 22px; width: auto; }
+        .site-footer nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+        .site-footer a { color: var(--soft); }
+        .site-footer a:hover { color: var(--accent); }
+    </style>
 </head>
-<body class="appear-animate">
+<body>
 
-<!-- Page Loader -->
-<div class="page-loader dark">
-    <div class="loader">Loading...</div>
-</div>
-<!-- End Page Loader -->
-
-<!-- Skip to Content -->
-<a href="#main" class="btn skip-to-content">Skip to Content</a>
-<!-- End Skip to Content -->
-
-<!-- Page Wrap -->
-<div class="page bg-dark light-content" id="top">
-
-    <!-- Navigation panel -->
-    <nav class="main-nav dark transparent stick-fixed wow-menubar">
-        <div class="full-wrapper relative clearfix">
-
-            <!-- Logo ( * your text or image into link tag *) -->
-            <div class="nav-logo-wrap local-scroll">
-                <a href="/" class="logo">
-                    <img src="img/logo_ethlo_new.svg" alt="ethlo logo" width="188" height="37"/>
-                </a>
-            </div>
-
-            <!-- Mobile Menu Button -->
-            <div class="mobile-nav" role="button" tabindex="0">
-                <i class="fa fa-bars"></i>
-                <span class="sr-only">Menu</span>
-            </div>
-
-            <!-- Main Menu -->
-            <div class="inner-nav desktop-nav">
-                <ul class="clearlist scroll-nav local-scroll">
-                    <li class="active"><a href="#home">Home</a></li>
-                    <li><a href="#video">Videos</a></li>
-                    <li><a href="#software">Software</a></li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </div>
-            <!-- End Main Menu -->
-
-        </div>
+<header class="wrap site-header">
+    <a href="/" aria-label="ethlo home"><img src="img/logo_ethlo_new.svg" alt="ethlo" width="55" height="30"></a>
+    <nav aria-label="Main">
+        <a href="#projects">Projects</a>
+        <a href="#notes">Notes</a>
+        <a href="#videos">Videos</a>
+        <a href="#about">About</a>
     </nav>
-    <!-- End Navigation panel -->
+</header>
 
-    <main id="main">
+<main id="main">
 
-        <!-- Home Section -->
-        <section class="home-section bg-dark-alfa-70 parallax-5" data-background="img/ocean_uhd.webp" id="home">
-            <div class="container min-height-100vh d-flex align-items-center pt-100 pb-100">
-
-                <!-- Hero Content -->
-                <div class="home-content">
-                    <div class="wow fadeInUpShort" data-wow-delay=".1s">
-                        <h1 class="hs-line-9 mb-60 mb-xs-40">
-                                    <span class="text-rotate">
-                                        Professional software development|
-                                        Avid video production|
-                                        Curious thinking and tinkering
-                                    </span>
-                        </h1>
-                    </div>
-                    <div class="wow fadeInUpShort" data-wow-delay=".4s">
-                        <p class="hs-line-4 opacity-07">
-                                    <span class="text-rotate">Extensive experience delivering high quality solutions|
-                                        Shooting and editing|
-                                        Jack of all trades, master of a few ;-)</span>
-                        </p>
-                    </div>
-                </div>
-                <!-- End Hero Content -->
-
-                <!-- Scroll Down -->
-                <div class="local-scroll scroll-down-wrap wow fadeInUpShort" data-wow-offset="0">
-                    <a href="#about" class="scroll-down"><i class="scroll-down-icon"></i><span class="sr-only">Scroll to the next section</span></a>
-                </div>
-                <!-- End Scroll Down -->
-
+    <section class="wrap hero">
+        <div class="stack hero-text">
+            <p class="label">Morten Haraldsen · ethlo</p>
+            <h1><span>Professional software.</span><span class="accent">Curious tinkering.</span></h1>
+            <p class="lede">25 years of building software that runs in production — and a habit of building everything else, too. Open source, side projects, and hardware that talks to software.</p>
+            <div class="buttons">
+                <a class="btn btn-primary" href="#projects">See the work
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                <a class="btn btn-ghost" href="#notes">Read the notes</a>
             </div>
-        </section>
-        <!-- End Home Section -->
+        </div>
+        <div class="hero-mark" aria-hidden="true">
+            $ ifconfig<br>
+            <b>eth</b>0: &lt;UP,RUNNING&gt;<br>
+            <b>lo</b>: &lt;UP,LOOPBACK&gt;<br><br>
+            <span class="accent">→ eth + lo = ethlo</span>
+        </div>
+    </section>
 
-        <!-- Video section -->
-        <section class="page-section pb-0 bg-dark light-content" id="video">
-            <div class="full-wrapper relative">
-                <div class="text-center mb-80 mb-sm-50">
-                    <h2 class="section-title">Videos</h2>
-                    <p class="section-title-descr">
-                        A selection of created videos, hosted on <a
-                                href="https://www.youtube.com/channel/UCxhi3ZkJ8SdAMvSj_XSAKpA">YouTube</a>.
-                        Please <a href="https://www.youtube.com/channel/UCxhi3ZkJ8SdAMvSj_XSAKpA?sub_confirmation=1">subscribe</a>
-                        to be notified of new videos!
-                    </p>
-                </div>
+    <div class="strip rule" style="border-bottom: 1px solid var(--line)">
+        <p class="wrap">
+            <span>25 years in production</span><span class="accent" aria-hidden="true">/</span>
+            <span>Open source</span><span class="accent" aria-hidden="true">/</span>
+            <span>AI</span><span class="accent" aria-hidden="true">/</span>
+            <span>Polymath</span>
+        </p>
+    </div>
 
-                <!-- Video grid -->
-                <ul class="works-grid work-grid-3 work-grid-gut clearfix hide-titles" id="video-grid">
-
-{{videos}}
-                </ul>
+    <section class="wrap section" id="projects">
+        <div class="head">
+            <div>
+                <p class="label">Selected work</p>
+                <h2 class="h2">Things I've built. <span class="accent">That work.</span></h2>
             </div>
-        </section>
-
-        <!-- Software section -->
-        <section class="page-section bg-dark light-content" id="software">
-            <div class="container relative">
-                <div class="mb-60 mb-xs-40">
-                    <div class="text-center mb-80 mb-sm-50">
-                        <h2 class="section-title">Software</h2>
-                        <p class="section-title-descr">
-                            A selection of open-source software projects, hosted on <a
-                                    href="https://github.com/ethlo">GitHub</a>.
-                        </p>
-                    </div>
+            <p>All of it public on <a href="https://github.com/ethlo" style="border-bottom: 1px solid">GitHub</a> — read the code, not just the claims.</p>
+        </div>
+        <div class="grid featured">
+{{featured}}
+        </div>
+        <p class="label" style="margin-top: 56px">Libraries &amp; tools</p>
+        <div class="grid libs">
 {{repos}}
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="page-section bg-dark light-content" id="about">
-            <div class="container relative">
-
-                <div class="text-center mb-80 mb-sm-50">
-                    <h2 class="section-title">About</h2>
-                </div>
-
-                <div class="mb-140 mb-sm-70">
-                    <div class="row section-text">
-
-                        <div class="col-md-12 col-lg-4 mb-md-50 mb-xs-30">
-                            <div class="lead-alt wow linesAnimIn" data-splitting="lines">
-                                Welcome to my playground!
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4 mb-sm-50 mb-xs-30 wow linesAnimIn" data-splitting="lines">
-                            I'm a professional, highly experienced software developer and architect. My background
-                            ranges from mapping business processes to low-level software and data optimizations.
-                        </div>
-
-                        <div class="col-md-6 col-lg-4 mb-sm-50 mb-xs-30 wow linesAnimIn" data-splitting="lines">
-                            When not busy with work or life, I love bringing my camera and create photos and videos that
-                            can portray the experience!
-                        </div>
-                    </div>
-                    <div class="row section-text">
-                        <div class="col-md-12 col-lg-4 mb-sm-50 mb-xs-30 wow linesAnimIn" data-splitting="lines">
-                            The name &quot;ethlo&quot; used to be my company name, and has been with me since I started
-                            doing professional software development, and has stayed with me. Since I find it short
-                            and sweet, I use it as a signature on things I have created.
-                            <p>Fun-fact: The name stems from the Linux <em>ifconfig</em> output, listing network
-                                interfaces, usually listing <em>eth</em> and <em>lo</em> as standard devices.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="page-section bg-dark-lighter light-content footer pb-100 pb-sm-50">
-        <div class="container">
-            <div class="footer-social-links mb-90 mb-xs-40">
-                <a href="https://www.youtube.com/channel/UCxhi3ZkJ8SdAMvSj_XSAKpA?sub_confirmation=1" title="Youtube"><i
-                            class="fab fa-youtube-square"></i> <span class="sr-only">Youtube channel</span></a>
-            </div>
-
-            <!-- Footer Text -->
-            <div class="footer-text">
-
-                <!-- Copyright -->
-                <div class="footer-copy">
-                    <a href="https://ethlo.com">Copyright ethlo 2004-{{year}}</a>.
-                </div>
-                <!-- End Copyright -->
-
-                <div class="footer-made">
-                    Made with love, coffee and pure stubbornness.
-                </div>
-
-            </div>
-            <!-- End Footer Text -->
-
         </div>
+        <p style="margin-top: 24px"><a class="link-under" href="https://github.com/ethlo?tab=repositories">Everything on github.com/ethlo
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></p>
+    </section>
 
-        <!-- Top Link -->
-        <div class="local-scroll">
-            <a href="#top" class="link-to-top"><i class="link-to-top-icon"></i></a>
+    <section class="band" id="notes">
+        <div class="wrap section">
+            <div class="head">
+                <div>
+                    <p class="label">Notes</p>
+                    <h2 class="h2">Notes from the bench.</h2>
+                </div>
+                <p>Write-ups of things I've built — software, hardware, and where the two meet.</p>
+            </div>
+            <article class="stack note-feature">
+                <p class="label">Coming soon · Hardware · ESP32 · Smart home</p>
+                <h3>Measuring a balanced ventilation system — properly.</h3>
+                <p>Custom differential-pressure, moisture and CO₂ sensors on ESP32s, feeding my smart home for logging — and for adjusting the ventilation itself. Not your typical software project.</p>
+                <div class="flow" aria-label="Sensors to ESP32 to smart home to ventilation">
+                    <span>Sensors</span>→<span>ESP32</span>→<span>Smart home</span>→<span>Ventilation</span>
+                </div>
+            </article>
+            <div class="grid notes">
+                <article class="stack note">
+                    <p class="label">Planned · r7 · Java</p>
+                    <h3>Recording every request without making the client wait.</h3>
+                    <p>Why r7 journals to memory-mapped files on local disk, and ships them later.</p>
+                </article>
+                <article class="stack note">
+                    <p class="label">Planned · ITU · Performance</p>
+                    <h3>Parsing dates 21–67× faster than java.time.</h3>
+                    <p>What it takes to make something as ordinary as a timestamp fast.</p>
+                </article>
+            </div>
         </div>
-        <!-- End Top Link -->
+    </section>
 
-    </footer>
-    <!-- End Footer -->
+    <section class="wrap section">
+        <div class="stack why-head">
+            <p class="label">How I work</p>
+            <h2><span>Jack of all trades.</span><span class="accent">Master of a few.</span></h2>
+            <p>The hardest problems rarely sit inside one specialty. They live in the seams — between the code, the build, the infrastructure and the AI someone bolted on last quarter. I've spent a career working across all of them.</p>
+        </div>
+        <div class="grid pillars">
+            <article class="stack pillar">
+                <span class="num">01</span>
+                <h3>25 years.</h3>
+                <p>A quarter-century as a professional developer — 17 of them as principal engineer and first employee at Kezzler AS. Deep in Java and the JVM, at home across the whole stack.</p>
+            </article>
+            <article class="stack pillar">
+                <span class="num">02</span>
+                <h3>Open source.</h3>
+                <p>Code in the open, used by other developers — from JSON Schema tooling to the date-time parser inside other people's validators.</p>
+            </article>
+            <article class="stack pillar">
+                <span class="num">03</span>
+                <h3>AI.</h3>
+                <p>Hands-on with AI as a working tool — in code, pipelines and day-to-day workflow. Experience is what makes it fast: knowing when it's right, and catching it when it isn't.</p>
+            </article>
+            <article class="stack pillar">
+                <span class="num">04</span>
+                <h3>Polymath.</h3>
+                <p>Software is one system among many. Embedded electronics and sensors, automation, CNC machining, building physics — I learn things all the way down.</p>
+            </article>
+        </div>
+    </section>
 
-</div>
-<!-- End Page Wrap -->
+    <section class="band" id="videos">
+        <div class="wrap section">
+            <div class="head">
+                <div>
+                    <p class="label">Off the keyboard</p>
+                    <h2 class="h2">Shooting &amp; editing.</h2>
+                </div>
+                <p>When I'm not at a keyboard, there's often a camera involved. The latest from <a href="https://www.youtube.com/channel/UCxhi3ZkJ8SdAMvSj_XSAKpA" style="border-bottom: 1px solid">YouTube</a>.</p>
+            </div>
+            <div class="grid videos">
+{{videos}}
+            </div>
+            <p style="margin-top: 32px"><a class="link-under" href="https://www.youtube.com/channel/UCxhi3ZkJ8SdAMvSj_XSAKpA?sub_confirmation=1">Subscribe on YouTube
+                <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></p>
+        </div>
+    </section>
 
-<!-- JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <section class="wrap section" id="about">
+        <p class="label" style="margin-bottom: 24px">About</p>
+        <div class="about">
+            <p class="lead">Welcome to my playground!</p>
+            <div>
+                <p>I'm Morten Haraldsen, a professional, highly experienced software developer and architect. My background ranges from mapping business processes to low-level software and data optimisations — for the last 17 years as principal engineer and first employee at Kezzler AS.</p>
+                <p>When not busy with work or life, I bring my camera, build things in the workshop, or wire up another sensor.</p>
+                <p>The name <em>ethlo</em> used to be my company name, and has stayed with me since I started doing professional software development. It comes from the Linux <em>ifconfig</em> output, which usually lists <em>eth</em> and <em>lo</em> as the standard network interfaces. Short and sweet, so I sign the things I make with it.</p>
+            </div>
+        </div>
+    </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
-        integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
-        integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"
-        referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.min.js"
-        integrity="sha512-x/Viuh5YndnrDISWqrZ6rerGnHccdLv/TW2B+xEGqubrLGCT6LdBGhnQxXo1Q4sXFgO12YeRWDYJkIV41OtOTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"
-        integrity="sha512-FRX6MYITclzDyyMmSQLgZoZTfE+GLzAQpjs15adVZMY6AqhsrBLx8UZwp4FoqrrRFWY9TiaPwja7EY5fk309vw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.min.js"
-        integrity="sha512-RXuJVZbGztKGYMNgmWU6oOHbUwYu+NnzovhT4lyW1kfmEfRK6CD1xL8U+0xACFqSkC3cxMugaaNEP8wWmvl4Jw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.min.js"
-        integrity="sha512-vYYoQJKYzaJQaOaYxaJhhmxikOJ2SEgHwmCNa0EMP0aRr7opdt4HHrorAwnCyPm8bdW/JBApIomo85YaBX81zA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax-min.js"
-        integrity="sha512-ES/eSqVi/9sgeZfvunOto+gwgFGrD/hzi5UOJFDR1Me8acKSBJIb2Gk0IyKje2ZaX+OovAG2/bRzj/uBcNeesg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.0.2/luxon.min.js"
-        integrity="sha512-frUCURIeB0OKMPgmDEwT3rC4NH2a4gn06N3Iw6T1z0WfrQZd7gNfJFbHrNsZP38PVXOp6nUiFtBqVvmCj+ARhw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!--
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js" integrity="sha512-/2sZKAsHDmHNoevKR/xsUKe+Bpf692q4tHNQs9VWWz0ujJ9JBM67iFYbIEdfDV9I2BaodgT5MIg/FTUmUv3oyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
--->
-
-<script src="js/site.js"></script>
+<footer class="rule">
+    <div class="wrap site-footer">
+        <img src="img/logo_ethlo_new.svg" alt="ethlo" width="40" height="22">
+        <nav aria-label="Elsewhere">
+            <a href="https://github.com/ethlo">GitHub</a>
+            <a href="https://www.youtube.com/channel/UCxhi3ZkJ8SdAMvSj_XSAKpA">YouTube</a>
+            <a href="https://r7.ethlo.com">r7</a>
+            <a href="https://clearsky.ethlo.com">Clearsky</a>
+        </nav>
+        <span>Copyright ethlo 2004–{{year}} · Made with love, coffee and pure stubbornness.</span>
+    </div>
+</footer>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FKGJPF4HFE"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-FKGJPF4HFE');
 </script>
-
 </body>
 </html>
 <!-- Built: {{built_at}} -->

@@ -5,7 +5,7 @@
 // flaky API never publishes an empty section. Set FIXTURES_DIR to build from
 // local JSON files without network access.
 
-import { readFile, writeFile, mkdir, cp, rm, readdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, cp, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 
@@ -13,16 +13,6 @@ const root = path.dirname(new URL(import.meta.url).pathname);
 const dist = path.join(root, 'dist');
 const dataDir = path.join(root, 'data');
 const config = JSON.parse(await readFile(path.join(root, 'site.config.json'), 'utf8'));
-
-const CSS_FILES = [
-  'style.css', 'style-responsive.css', 'vertical-rhythm.min.css', 'magnific-popup.css',
-  'owl.carousel.css', 'animate.min.css', 'splitting.css',
-];
-const JS_FILES = [
-  'owl.carousel.min.js', 'isotope.pkgd.min.js', 'imagesloaded.pkgd.min.js', 'jquery.magnific-popup.min.js',
-  'masonry.pkgd.min.js', 'jquery.lazyload.min.js', 'wow.min.js', 'morphext.js', 'typed.min.js', 'all.js',
-  'splitting.min.js',
-];
 
 // ---------- data ----------
 
@@ -128,15 +118,19 @@ async function load(name, fetcher) {
   }
 }
 
+// Repos named in `order` come first, in that order; the rest follow by stars, forks, last push.
 function selectRepos(repos) {
   const c = config.github;
   const exclude = new Set(c.exclude);
+  const rank = new Map((c.order ?? []).map((name, i) => [name, i]));
+  const byRank = (r) => rank.get(r.name) ?? Infinity;
   return repos
     .filter((r) => !(c.excludeForks && r.fork))
     .filter((r) => !(c.excludeArchived && r.archived))
     .filter((r) => !c.includeTopic || r.topics.includes(c.includeTopic))
     .filter((r) => !exclude.has(r.name))
     .sort((a, b) =>
+      (byRank(a) - byRank(b) || 0) ||
       b.stargazers_count - a.stargazers_count ||
       b.forks_count - a.forks_count ||
       b.pushed_at.localeCompare(a.pushed_at));
@@ -163,52 +157,43 @@ function decodeXml(s) {
 const esc = (s) => String(s ?? '')
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
+const ARROW = '<svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>';
+
 function renderVideo(v) {
   const id = encodeURIComponent(v.id);
-  const summary = v.description.split(/\r?\n/)[0];
   return `
-                    <li class="work-item mix video">
-                        <a href="https://youtu.be/${id}" class="work-ext-link">
-                            <div class="work-img">
-                                <div class="work-img-bg wow-p scalexIn"></div>
-                                <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg"
-                                     srcset="https://i.ytimg.com/vi_webp/${id}/maxresdefault.webp 1100w, https://i.ytimg.com/vi/${id}/hqdefault.jpg 480w"
-                                     sizes="(min-width: 1000px) 33vw, 100vw"
-                                     loading="lazy" alt="${esc(v.title)}" class="wow-p fadeIn" data-wow-delay=".2s"/>
-                            </div>
-                            <div class="work-intro">
-                                <h3 class="work-title">${esc(v.title)}</h3>
-                                <div class="work-descr">${esc(summary)}</div>
-                            </div>
-                        </a>
-                    </li>`;
+                <a class="stack video" href="https://youtu.be/${id}">
+                    <img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" loading="lazy" alt="" width="480" height="270">
+                    <span>${esc(v.title)}</span>
+                </a>`;
+}
+
+const stars = (r) => (r.stargazers_count > 0 ? ` · ★ ${r.stargazers_count}` : '');
+
+// Featured repos get a big card; text comes from config.github.featured, numbers from GitHub.
+function renderFeatured(r, f) {
+  const url = f.url ?? r.html_url;
+  return `
+            <article class="stack card">
+                <div class="card-top"><span>${esc(f.label ?? r.language ?? '')}</span><span class="accent">${esc(f.badge ?? '')}</span></div>
+                <h3>${esc(f.title ?? r.name)}</h3>
+                <p class="tagline">${esc(f.tagline ?? r.description)}</p>
+                ${f.summary ? `<p class="summary">${esc(f.summary)}</p>` : ''}
+                <p class="meta">${esc(f.stack ?? r.language ?? '')}${stars(r)}</p>
+                <div style="display:flex; flex-wrap:wrap; gap:8px 24px">
+                    <a class="link-under" href="${esc(url)}">${esc(url.replace(/^https?:\/\//, ''))} ${ARROW}</a>
+                    ${f.url ? `<a class="link-under" href="${esc(r.html_url)}">Source ${ARROW}</a>` : ''}
+                </div>
+            </article>`;
 }
 
 function renderRepo(r) {
   return `
-                        <div class="col-sm-4 mb-40">
-                            <div class="text" style="padding:2rem">
-                                <h5><a class="text-link" style="font-size:20px; text-transform: none" href="${esc(r.html_url)}">
-                                    <i class="fab fa-github"></i> ${esc(r.name)}</a>
-                                </h5>
-                                <div class="row">
-                                    <div class="col">
-                                        <i class="fas fa-star" style="color:darkgoldenrod" aria-hidden="true"></i> ${r.stargazers_count}&nbsp;
-                                        <i class="fas fa-code-branch" style="color: #888" aria-hidden="true"></i> ${r.forks_count}
-                                    </div>
-                                    <div class="col align-right">${esc(r.pushed_at.slice(0, 10))}</div>
-                                </div>
-                                <p>${esc(r.description)}</p>
-                            </div>
-                        </div>`;
-}
-
-function renderRepos(repos) {
-  const rows = [];
-  for (let i = 0; i < repos.length; i += 3) {
-    rows.push(`\n                    <div class="row">${repos.slice(i, i + 3).map(renderRepo).join('')}\n                    </div>`);
-  }
-  return rows.join('');
+            <a class="stack lib" href="${esc(r.html_url)}">
+                <span class="lib-name">${esc(r.name)}</span>
+                <span class="lib-desc">${esc(r.description)}</span>
+                <span class="lib-meta">${esc(r.language ?? '')}${stars(r)}</span>
+            </a>`;
 }
 
 // ---------- main ----------
@@ -219,25 +204,21 @@ const [repos, videos] = await Promise.all([
   load('youtube', fetchYoutube).then(selectVideos),
 ]);
 
+const featuredConfig = config.github.featured ?? {};
+const featured = repos.filter((r) => featuredConfig[r.name]);
+const others = repos.filter((r) => !featuredConfig[r.name]);
+
 const now = new Date();
 const template = await readFile(path.join(root, 'src', 'index.html'), 'utf8');
 const html = template
+  .replace('{{featured}}', () => featured.map((r) => renderFeatured(r, featuredConfig[r.name])).join(''))
+  .replace('{{repos}}', () => others.map(renderRepo).join(''))
   .replace('{{videos}}', () => videos.map(renderVideo).join(''))
-  .replace('{{repos}}', () => renderRepos(repos))
   .replaceAll('{{year}}', String(now.getUTCFullYear()))
   .replaceAll('{{built_at}}', now.toISOString());
 
 await rm(dist, { recursive: true, force: true });
 await cp(path.join(root, 'static'), dist, { recursive: true });
-const concat = async (dir, files) =>
-  (await Promise.all(files.map((f) => readFile(path.join(dist, dir, f), 'utf8')))).join('\n\n');
-await writeFile(path.join(dist, 'css', 'site.css'), await concat('css', CSS_FILES));
-await writeFile(path.join(dist, 'js', 'site.js'), await concat('js', JS_FILES));
-for (const dir of ['css', 'js']) {
-  for (const f of await readdir(path.join(dist, dir))) {
-    if (/\.(css|js)$/.test(f) && !f.startsWith('site.')) await rm(path.join(dist, dir, f));
-  }
-}
 await mkdir(path.join(dist, 'data'));
 await writeFile(path.join(dist, 'data', 'github.json'), JSON.stringify(repos, null, 2));
 await writeFile(path.join(dist, 'data', 'youtube.json'), JSON.stringify(videos, null, 2));
