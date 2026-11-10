@@ -7,11 +7,42 @@
     "exclude": [
       "ethlo",
       "ethlo.com"
-    ]
+    ],
+    "order": [
+      "r7",
+      "clearsky",
+      "jsons2xsd",
+      "itu",
+      "eclipselink-maven-plugin",
+      "spring-tx-cache-decorator",
+      "geodata",
+      "chronograph",
+      "zally-maven-plugin",
+      "date-time-wars"
+    ],
+    "featured": {
+      "r7": {
+        "label": "Gateway",
+        "badge": "Source-available · pre-release",
+        "tagline": "The gateway that remembers every request.",
+        "summary": "Routes traffic to your services and records every exchange — metadata, headers or full bodies — to memory-mapped files on local disk, with secrets stored only as fingerprints. Configuration is checked before it serves a single request.",
+        "stack": "Java · Helidon Níma · WARC · JSON lines",
+        "url": "https://r7.ethlo.com"
+      },
+      "clearsky": {
+        "title": "Clearsky",
+        "label": "Developer tool",
+        "badge": "Open source",
+        "tagline": "One local page for what needs you at work.",
+        "summary": "Reviews, PRs, Jira tickets, mentions, today's meetings and a stand-up summary — with a sandboxed Copilot chat beside it. Runs on your own machine with your own logins, and keeps nothing anywhere else.",
+        "stack": "Node · GitHub CLI · Atlassian CLI · Plugins",
+        "url": "https://clearsky.ethlo.com"
+      }
+    }
   },
   "youtube": {
     "channelId": "UCxhi3ZkJ8SdAMvSj_XSAKpA",
-    "maxVideos": 0,
+    "maxVideos": 6,
     "excludeIds": []
   }
 }

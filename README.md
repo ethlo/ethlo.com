@@ -1,6 +1,6 @@
 # ethlo.com
 
-Source for [ethlo.com](https://ethlo.com): a static page listing my open-source projects on GitHub and my YouTube videos.
+Source for [ethlo.com](https://ethlo.com): a static page with my projects on GitHub, notes, and my latest YouTube videos.
 
 A GitHub Action (`.github/workflows/publish.yml`) rebuilds and publishes the page to GitHub Pages every day, on every push to `main`, and on demand from the Actions tab ("Run workflow").
 
@@ -21,9 +21,11 @@ Edit `site.config.json`:
 - `github.exclude`: repo names to hide.
 - `github.excludeForks`, `github.excludeArchived`: hide forks and archived repos.
 - `github.includeTopic`: set to a topic name (for example `"showcase"`) to show only repos tagged with it.
-- `youtube.maxVideos`: `0` shows all videos. `youtube.excludeIds`: video ids to hide.
+- `github.order`: repo names to show first, in this order.
+- `github.featured`: repos shown as large cards, keyed by name. Each entry can set `title`, `label`, `badge`, `tagline`, `summary`, `stack` and `url` (a project site); anything left out falls back to the GitHub data.
+- `youtube.maxVideos`: how many of the latest videos to show (`0` shows all). `youtube.excludeIds`: video ids to hide.
 
-Repos are sorted by stars, then forks, then last push.
+Repos in `order` come first; the rest are sorted by stars, then forks, then last push. The Notes section is written directly in `src/index.html`.
 
 ## Local build
 
