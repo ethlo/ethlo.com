@@ -6,11 +6,11 @@
     "language": "HTML",
     "topics": [],
     "fork": false,
-    "archived": false,
+    "archived": true,
     "stargazers_count": 0,
     "forks_count": 0,
     "pushed_at": "2021-02-12T12:07:57Z",
-    "updated_at": "2021-07-02T08:04:07Z"
+    "updated_at": "2026-11-10T07:14:37Z"
   },
   {
     "name": "api-documenter",
@@ -19,11 +19,11 @@
     "language": "Java",
     "topics": [],
     "fork": false,
-    "archived": false,
+    "archived": true,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2017-03-05T19:32:49Z",
-    "updated_at": "2016-04-28T12:58:13Z"
+    "pushed_at": "2026-11-10T07:14:26Z",
+    "updated_at": "2026-11-10T07:14:33Z"
   },
   {
     "name": "async-retry",
@@ -80,21 +80,23 @@
   {
     "name": "chronograph",
     "html_url": "https://github.com/ethlo/chronograph",
-    "description": "Highly configurable, easy to use stopwatch allowing measurement of accumulated run-time, with support for numerous statistics. ",
+    "description": "Java stopwatch for measuring elapsed time, with nested tasks and statistics (percentiles, std dev) and table output.",
     "language": "Java",
     "topics": [
       "benchmarking",
       "chronograph",
-      "java-chronograph",
+      "java",
       "measure",
+      "profiling",
+      "showcase",
       "stopwatch"
     ],
     "fork": false,
     "archived": false,
     "stargazers_count": 5,
     "forks_count": 0,
-    "pushed_at": "2026-07-23T22:51:19Z",
-    "updated_at": "2026-02-13T09:22:20Z"
+    "pushed_at": "2026-11-10T06:51:39Z",
+    "updated_at": "2026-11-10T07:10:30Z"
   },
   {
     "name": "clackshack",
@@ -114,6 +116,91 @@
     "forks_count": 0,
     "pushed_at": "2025-01-10T09:56:04Z",
     "updated_at": "2025-09-10T12:40:36Z"
+  },
+  {
+    "name": "clearsky",
+    "html_url": "https://github.com/ethlo/clearsky",
+    "description": "Organize my workday",
+    "language": "JavaScript",
+    "topics": [
+      "copilot",
+      "dashboard",
+      "developer-tools",
+      "github",
+      "jira",
+      "nodejs",
+      "showcase"
+    ],
+    "fork": false,
+    "archived": false,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "pushed_at": "2026-11-10T07:03:13Z",
+    "updated_at": "2026-11-10T07:10:19Z"
+  },
+  {
+    "name": "clearsky-confluence",
+    "html_url": "https://github.com/ethlo/clearsky-confluence",
+    "description": null,
+    "language": "JavaScript",
+    "topics": [
+      "clearsky",
+      "clearsky-plugin"
+    ],
+    "fork": false,
+    "archived": false,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "pushed_at": "2026-11-09T13:40:46Z",
+    "updated_at": "2026-11-10T07:10:29Z"
+  },
+  {
+    "name": "clearsky-grafana",
+    "html_url": "https://github.com/ethlo/clearsky-grafana",
+    "description": null,
+    "language": "JavaScript",
+    "topics": [
+      "clearsky",
+      "clearsky-plugin"
+    ],
+    "fork": false,
+    "archived": false,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "pushed_at": "2026-11-09T13:40:54Z",
+    "updated_at": "2026-11-10T07:10:28Z"
+  },
+  {
+    "name": "clearsky-slack-mcp",
+    "html_url": "https://github.com/ethlo/clearsky-slack-mcp",
+    "description": null,
+    "language": "JavaScript",
+    "topics": [
+      "clearsky",
+      "clearsky-plugin"
+    ],
+    "fork": false,
+    "archived": false,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "pushed_at": "2026-11-09T13:40:37Z",
+    "updated_at": "2026-11-10T07:10:30Z"
+  },
+  {
+    "name": "clearsky-visma-flyt",
+    "html_url": "https://github.com/ethlo/clearsky-visma-flyt",
+    "description": null,
+    "language": "JavaScript",
+    "topics": [
+      "clearsky",
+      "clearsky-plugin"
+    ],
+    "fork": false,
+    "archived": false,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "pushed_at": "2026-11-09T13:43:27Z",
+    "updated_at": "2026-11-10T07:10:27Z"
   },
   {
     "name": "cloud-gateway",
@@ -138,7 +225,7 @@
   {
     "name": "dachs",
     "html_url": "https://github.com/ethlo/dachs",
-    "description": "Dachs - Data Change Snitch - Unified persistence events",
+    "description": "Unified entity change events (insert/update/delete with old and new values) across JPA providers (Hibernate, EclipseLink).",
     "language": "Java",
     "topics": [
       "audit-log",
@@ -152,21 +239,28 @@
     "archived": false,
     "stargazers_count": 5,
     "forks_count": 2,
-    "pushed_at": "2026-11-03T13:10:14Z",
-    "updated_at": "2026-06-01T06:12:59Z"
+    "pushed_at": "2026-11-10T06:51:43Z",
+    "updated_at": "2026-11-10T07:10:32Z"
   },
   {
     "name": "date-time-wars",
     "html_url": "https://github.com/ethlo/date-time-wars",
-    "description": "Benchmarks of different date-time parsers/formatters",
+    "description": "JMH benchmarks of Java date-time parsers and formatters, including ITU and java.time. Report on GitHub Pages.",
     "language": "Java",
-    "topics": [],
+    "topics": [
+      "benchmark",
+      "date-time",
+      "java",
+      "jmh",
+      "rfc3339",
+      "showcase"
+    ],
     "fork": false,
     "archived": false,
     "stargazers_count": 1,
     "forks_count": 0,
     "pushed_at": "2026-09-22T08:23:52Z",
-    "updated_at": "2026-09-22T08:23:57Z"
+    "updated_at": "2026-11-10T07:10:31Z"
   },
   {
     "name": "debrepo",
@@ -179,11 +273,11 @@
       "shell"
     ],
     "fork": false,
-    "archived": false,
+    "archived": true,
     "stargazers_count": 2,
     "forks_count": 0,
     "pushed_at": "2018-01-03T13:33:49Z",
-    "updated_at": "2025-05-30T17:31:44Z"
+    "updated_at": "2026-11-10T07:14:31Z"
   },
   {
     "name": "ebs-server",
@@ -205,17 +299,20 @@
     "language": "Java",
     "topics": [
       "eclipselink",
+      "java",
       "jpa",
+      "maven",
       "maven-plugin",
       "model-generation",
+      "showcase",
       "weaving"
     ],
     "fork": false,
     "archived": false,
     "stargazers_count": 37,
     "forks_count": 17,
-    "pushed_at": "2026-06-02T12:05:20Z",
-    "updated_at": "2026-09-18T08:17:14Z"
+    "pushed_at": "2026-11-10T06:51:29Z",
+    "updated_at": "2026-11-10T07:10:21Z"
   },
   {
     "name": "eclipselink-maven-plugin-test",
@@ -266,21 +363,21 @@
     "archived": false,
     "stargazers_count": 1,
     "forks_count": 0,
-    "pushed_at": "2025-01-16T12:46:26Z",
+    "pushed_at": "2026-11-10T06:52:22Z",
     "updated_at": "2025-01-16T12:46:28Z"
   },
   {
     "name": "ethlo.com",
     "html_url": "https://github.com/ethlo/ethlo.com",
-    "description": null,
+    "description": "Source for ethlo.com",
     "language": "CSS",
     "topics": [],
     "fork": false,
     "archived": false,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2026-11-08T11:14:56Z",
-    "updated_at": "2026-11-08T11:15:00Z"
+    "pushed_at": "2026-11-10T07:15:18Z",
+    "updated_at": "2026-11-10T07:15:23Z"
   },
   {
     "name": "flexwsdl",
@@ -328,18 +425,22 @@
     "language": "Java",
     "topics": [
       "docker",
+      "geocoding",
       "geonames",
       "gis",
       "ip2country",
       "ip2location",
-      "iplookup"
+      "iplookup",
+      "java",
+      "openapi",
+      "showcase"
     ],
     "fork": false,
     "archived": false,
     "stargazers_count": 2,
     "forks_count": 0,
-    "pushed_at": "2026-11-05T13:18:07Z",
-    "updated_at": "2026-11-05T13:15:32Z"
+    "pushed_at": "2026-11-10T06:52:04Z",
+    "updated_at": "2026-11-10T07:10:23Z"
   },
   {
     "name": "gpslogger",
@@ -374,11 +475,11 @@
     "language": "HTML",
     "topics": [],
     "fork": false,
-    "archived": false,
+    "archived": true,
     "stargazers_count": 0,
     "forks_count": 0,
     "pushed_at": "2017-03-09T07:26:02Z",
-    "updated_at": "2017-03-02T16:55:40Z"
+    "updated_at": "2026-11-10T07:14:36Z"
   },
   {
     "name": "hmbk",
@@ -411,14 +512,15 @@
       "parser",
       "performance",
       "rfc3339",
+      "showcase",
       "time"
     ],
     "fork": false,
     "archived": false,
     "stargazers_count": 41,
     "forks_count": 11,
-    "pushed_at": "2026-10-07T08:36:43Z",
-    "updated_at": "2026-10-07T08:14:03Z"
+    "pushed_at": "2026-11-10T06:51:25Z",
+    "updated_at": "2026-11-10T07:10:20Z"
   },
   {
     "name": "jard",
@@ -462,15 +564,15 @@
   {
     "name": "jaxb2-despatch-advice",
     "html_url": "https://github.com/ethlo/jaxb2-despatch-advice",
-    "description": null,
+    "description": "JAXB2 bindings for the GS1 Despatch Advice schemas",
     "language": "Java",
     "topics": [],
     "fork": false,
-    "archived": false,
+    "archived": true,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2023-04-26T10:44:59Z",
-    "updated_at": "2023-04-26T10:40:35Z"
+    "pushed_at": "2026-11-10T07:14:18Z",
+    "updated_at": "2026-11-10T07:14:30Z"
   },
   {
     "name": "jaxb2-epcis",
@@ -482,7 +584,7 @@
     "archived": false,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2025-09-30T08:31:59Z",
+    "pushed_at": "2026-11-10T06:52:09Z",
     "updated_at": "2025-03-21T12:04:27Z"
   },
   {
@@ -492,11 +594,11 @@
     "language": "Java",
     "topics": [],
     "fork": false,
-    "archived": false,
+    "archived": true,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2023-04-26T10:44:09Z",
-    "updated_at": "2023-04-26T10:44:14Z"
+    "pushed_at": "2026-11-10T07:14:14Z",
+    "updated_at": "2026-11-10T07:14:29Z"
   },
   {
     "name": "jquad",
@@ -538,6 +640,7 @@
       "json",
       "json-schema",
       "jsonschema",
+      "showcase",
       "xml",
       "xml-schema",
       "xsd"
@@ -546,8 +649,8 @@
     "archived": false,
     "stargazers_count": 91,
     "forks_count": 43,
-    "pushed_at": "2023-02-24T08:53:31Z",
-    "updated_at": "2026-08-25T07:15:32Z"
+    "pushed_at": "2026-11-10T06:50:46Z",
+    "updated_at": "2026-11-10T07:10:20Z"
   },
   {
     "name": "keycloak-bcrypt",
@@ -578,19 +681,18 @@
   {
     "name": "kfka",
     "html_url": "https://github.com/ethlo/kfka",
-    "description": "Simple embeddable, persistent, rewindable, and filterable queue implementation with no dependencies.",
+    "description": "Embeddable, persistent, rewindable and filterable message queue for Java backed by MySQL; no dependencies.",
     "language": "Java",
     "topics": [
       "java",
-      "kafka",
       "queue"
     ],
     "fork": false,
     "archived": false,
     "stargazers_count": 6,
     "forks_count": 0,
-    "pushed_at": "2026-01-26T21:52:46Z",
-    "updated_at": "2026-09-18T08:17:26Z"
+    "pushed_at": "2026-11-10T06:51:47Z",
+    "updated_at": "2026-11-10T07:10:33Z"
   },
   {
     "name": "krasa-jaxb-tools",
@@ -599,11 +701,11 @@
     "language": "Java",
     "topics": [],
     "fork": true,
-    "archived": false,
+    "archived": true,
     "stargazers_count": 0,
     "forks_count": 0,
     "pushed_at": "2023-06-07T06:29:40Z",
-    "updated_at": "2023-06-06T17:55:57Z"
+    "updated_at": "2026-11-10T07:14:38Z"
   },
   {
     "name": "lamebda",
@@ -622,7 +724,7 @@
     "archived": false,
     "stargazers_count": 2,
     "forks_count": 0,
-    "pushed_at": "2025-11-08T06:41:35Z",
+    "pushed_at": "2026-11-10T06:51:52Z",
     "updated_at": "2025-11-08T05:48:19Z"
   },
   {
@@ -645,11 +747,11 @@
     "language": "HTML",
     "topics": [],
     "fork": false,
-    "archived": false,
+    "archived": true,
     "stargazers_count": 1,
     "forks_count": 0,
     "pushed_at": "2024-02-20T17:30:03Z",
-    "updated_at": "2023-12-28T19:48:00Z"
+    "updated_at": "2026-11-10T07:14:31Z"
   },
   {
     "name": "logback-filters",
@@ -693,7 +795,7 @@
   {
     "name": "mvc-accelerator",
     "html_url": "https://github.com/ethlo/mvc-accelerator",
-    "description": "High-performance routing and security matcher caching for Spring MVC / Spring Boot. Optimize hot endpoints with minimal changes.",
+    "description": "Fast path for selected Spring MVC endpoints: caches routing and security matcher results to cut per-request overhead.",
     "language": "Java",
     "topics": [
       "java",
@@ -707,7 +809,7 @@
     "stargazers_count": 2,
     "forks_count": 0,
     "pushed_at": "2025-09-18T11:08:08Z",
-    "updated_at": "2025-09-18T21:22:08Z"
+    "updated_at": "2026-11-10T07:10:33Z"
   },
   {
     "name": "my2ch",
@@ -735,11 +837,11 @@
     "language": "HTML",
     "topics": [],
     "fork": false,
-    "archived": false,
+    "archived": true,
     "stargazers_count": 0,
     "forks_count": 0,
     "pushed_at": "2019-01-27T10:09:55Z",
-    "updated_at": "2019-01-27T10:09:57Z"
+    "updated_at": "2026-11-10T07:14:32Z"
   },
   {
     "name": "orkedrikk.no",
@@ -792,11 +894,11 @@
       "on-the-fly"
     ],
     "fork": false,
-    "archived": false,
+    "archived": true,
     "stargazers_count": 1,
     "forks_count": 0,
-    "pushed_at": "2023-12-09T12:21:19Z",
-    "updated_at": "2023-12-28T19:12:28Z"
+    "pushed_at": "2026-11-10T07:14:10Z",
+    "updated_at": "2026-11-10T07:14:28Z"
   },
   {
     "name": "r7",
@@ -804,16 +906,22 @@
     "description": "r7 is a high-performance Java HTTP gateway core with composable routing, low-allocation design, and memory-mapped full audit logging with pluggable tailers.",
     "language": "Java",
     "topics": [
+      "audit-log",
+      "gateway",
       "http",
+      "java",
       "proxy-server",
-      "routing-engine"
+      "reverse-proxy",
+      "routing-engine",
+      "showcase",
+      "warc"
     ],
     "fork": false,
     "archived": false,
     "stargazers_count": 3,
     "forks_count": 0,
     "pushed_at": "2026-10-31T10:56:06Z",
-    "updated_at": "2026-10-18T07:40:41Z"
+    "updated_at": "2026-11-10T07:10:18Z"
   },
   {
     "name": "scannotation",
@@ -844,7 +952,7 @@
   {
     "name": "source-extractor-maven-plugin",
     "html_url": "https://github.com/ethlo/source-extractor-maven-plugin",
-    "description": "Source extractor for documentation purposes. Extract code from actual source code to avoid maintaining codesamples in documentation. Link to full examples.",
+    "description": "Maven plugin that extracts code from real source files into Markdown/HTML docs, so examples stay compiled and tested.",
     "language": "Java",
     "topics": [
       "documentation",
@@ -856,8 +964,8 @@
     "archived": false,
     "stargazers_count": 1,
     "forks_count": 0,
-    "pushed_at": "2024-02-11T10:05:50Z",
-    "updated_at": "2025-02-15T04:39:27Z"
+    "pushed_at": "2026-11-10T06:51:56Z",
+    "updated_at": "2026-11-10T07:10:34Z"
   },
   {
     "name": "spring-actuator-addons",
@@ -866,11 +974,11 @@
     "language": "Java",
     "topics": [],
     "fork": false,
-    "archived": false,
+    "archived": true,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2018-02-20T07:32:40Z",
-    "updated_at": "2018-01-27T11:47:25Z"
+    "pushed_at": "2026-11-10T07:14:22Z",
+    "updated_at": "2026-11-10T07:14:34Z"
   },
   {
     "name": "spring-startup-progress",
@@ -903,7 +1011,7 @@
     "archived": false,
     "stargazers_count": 4,
     "forks_count": 2,
-    "pushed_at": "2024-01-19T11:48:17Z",
+    "pushed_at": "2026-11-10T06:52:00Z",
     "updated_at": "2025-08-13T11:20:33Z"
   },
   {
@@ -926,11 +1034,11 @@
     "language": null,
     "topics": [],
     "fork": false,
-    "archived": false,
+    "archived": true,
     "stargazers_count": 0,
     "forks_count": 0,
     "pushed_at": "2014-09-25T09:45:53Z",
-    "updated_at": "2017-07-31T07:55:17Z"
+    "updated_at": "2026-11-10T07:14:35Z"
   },
   {
     "name": "swagger-codegen-tooling",
@@ -1060,13 +1168,15 @@
       "json",
       "linter",
       "maven-plugin",
-      "openapi"
+      "openapi",
+      "showcase",
+      "zally"
     ],
     "fork": false,
     "archived": false,
     "stargazers_count": 13,
     "forks_count": 6,
-    "pushed_at": "2025-09-11T09:28:37Z",
-    "updated_at": "2026-01-27T07:38:01Z"
+    "pushed_at": "2026-11-10T06:51:34Z",
+    "updated_at": "2026-11-10T07:10:22Z"
   }
 ]
