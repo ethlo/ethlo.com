@@ -87,18 +87,13 @@
         .lib-meta { font-family: var(--mono); font-size: 12px; color: var(--soft); padding-top: 6px; margin-top: auto; }
 
         /* notes */
-        .note-feature { background: var(--accent); color: var(--ink); padding: clamp(28px, 4vw, 56px); gap: 22px; margin-bottom: 16px; }
+        .note-feature { background: var(--accent); color: var(--ink); padding: clamp(28px, 4vw, 56px); gap: 22px; }
         .note-feature .label { color: var(--ink); font-size: 13px; }
         .note-feature h3 { max-width: 860px; font-size: clamp(34px, 4.5vw, 60px); line-height: 1; font-weight: 800; letter-spacing: -.045em; }
         .note-feature p { max-width: 680px; font-size: 18px; line-height: 1.55; font-weight: 500; }
         .flow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding-top: 6px; font-family: var(--mono); font-size: 14px; font-weight: 500; }
         .flow span { padding: 10px 14px; border: 2px solid var(--ink); }
         .flow span:last-child { background: var(--ink); color: var(--accent); }
-        .notes { grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); }
-        .note { background: var(--ink); border: 1px solid var(--line); padding: 32px; gap: 14px; }
-        .note .label { font-size: 13px; }
-        .note h3 { font-size: 26px; line-height: 1.15; font-weight: 800; letter-spacing: -.03em; }
-        .note p { font-size: 16px; line-height: 1.6; color: var(--muted); }
 
         /* why */
         .why-head { gap: 24px; max-width: 920px; margin-bottom: clamp(48px, 6vw, 80px); }
@@ -210,18 +205,6 @@
                     <span>Sensors</span>→<span>ESP32</span>→<span>Smart home</span>→<span>Ventilation</span>
                 </div>
             </article>
-            <div class="grid notes">
-                <article class="stack note">
-                    <p class="label">Planned · r7 · Java</p>
-                    <h3>Recording every request without making the client wait.</h3>
-                    <p>Why r7 journals to memory-mapped files on local disk, and ships them later.</p>
-                </article>
-                <article class="stack note">
-                    <p class="label">Planned · ITU · Performance</p>
-                    <h3>Parsing dates 21–67× faster than java.time.</h3>
-                    <p>What it takes to make something as ordinary as a timestamp fast.</p>
-                </article>
-            </div>
         </div>
     </section>
 
@@ -235,7 +218,7 @@
             <article class="stack pillar">
                 <span class="num">01</span>
                 <h3>25 years.</h3>
-                <p>A quarter-century as a professional developer — 17 of them as principal engineer and first employee at Kezzler AS. Deep in Java and the JVM, at home across the whole stack.</p>
+                <p>A quarter-century as a professional developer. Deep in Java and the JVM, at home across the whole stack — from architecture to production.</p>
             </article>
             <article class="stack pillar">
                 <span class="num">02</span>
@@ -275,11 +258,11 @@
     <section class="wrap section" id="about">
         <p class="label" style="margin-bottom: 24px">About</p>
         <div class="about">
-            <p class="lead">Welcome to my playground!</p>
+            <h2 class="lead">Morten Haraldsen</h2>
             <div>
-                <p>I'm Morten Haraldsen, a professional, highly experienced software developer and architect. My background ranges from mapping business processes to low-level software and data optimisations — for the last 17 years as principal engineer and first employee at Kezzler AS.</p>
-                <p>When not busy with work or life, I bring my camera, build things in the workshop, or wire up another sensor.</p>
-                <p>The name <em>ethlo</em> used to be my company name, and has stayed with me since I started doing professional software development. It comes from the Linux <em>ifconfig</em> output, which usually lists <em>eth</em> and <em>lo</em> as the standard network interfaces. Short and sweet, so I sign the things I make with it.</p>
+                <p>Software developer and architect. My work ranges from mapping business processes to low-level software and data optimisation — for the last 17 years as principal engineer and first employee at Kezzler AS.</p>
+                <p>Away from the keyboard: cameras, the workshop, and the occasional sensor wired into the house.</p>
+                <p><em>ethlo</em> used to be my company name and has stayed with me ever since. It comes from the Linux <em>ifconfig</em> output, which usually lists <em>eth</em> and <em>lo</em> as the standard network interfaces. Short and sweet, so I sign the things I make with it.</p>
             </div>
         </div>
     </section>
