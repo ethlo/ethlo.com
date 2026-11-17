@@ -39,6 +39,19 @@
     "updated_at": "2023-06-26T05:49:40Z"
   },
   {
+    "name": "blog",
+    "html_url": "https://github.com/ethlo/blog",
+    "description": "Notes from the bench: blog.ethlo.com",
+    "language": null,
+    "topics": [],
+    "fork": false,
+    "archived": false,
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "pushed_at": "2026-11-17T08:32:05Z",
+    "updated_at": "2026-11-17T08:32:02Z"
+  },
+  {
     "name": "castsaver",
     "html_url": "https://github.com/ethlo/castsaver",
     "description": "Chromecast screen-saver",
@@ -324,7 +337,7 @@
     "archived": false,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2026-11-15T11:55:14Z",
+    "pushed_at": "2026-11-16T12:41:07Z",
     "updated_at": "2026-11-12T13:38:44Z"
   },
   {
