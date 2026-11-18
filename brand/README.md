@@ -28,6 +28,6 @@ The font is the variable JetBrains Mono from [google/fonts](https://github.com/g
 
 ## Social previews
 
-`previews/` holds the GitHub social preview card for each showcase repo (1280×640, set under the repo's Settings → Social preview) and `github-avatar.png`, the stacked icon inset so GitHub's round crop doesn't clip it.
+`previews/` holds the GitHub social preview card for each showcase repo (1280×640, set under the repo's Settings → Social preview) and `github-avatar.png`: C1 as a band across the circle, so the round crop closes the frame and the block (`avatar.js`, the `bandOpen` variant).
 
 To remake them, edit `previews/repos.json` (name, one-line description, stack), put `InterTight.ttf`, `JetBrainsMono.ttf` and `../static/img/ethlo-wordmark-small.svg` next to `card.html`, and run `node previews/render.js` (needs Playwright). Cards come out as `out-<name>.png`.
