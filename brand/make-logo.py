@@ -89,3 +89,24 @@ def icon(isz, path):
 icon(34, f'{OUT}/ethlo-icon.svg')
 icon(44, f'{OUT}/ethlo-icon-16.svg')   # bigger letters for the 16px favicon
 print('done')
+
+
+# --- favicon: C3, eth stacked over lo in one square ---
+def stacked(path, with_text=True):
+    B = 4 if with_text else 8              # frame; the 16px version has no text and a heavier frame
+    h = I / 2
+    frame = f'M0 0H{I}V{h}H{I - B}V{B}H{B}V{h}H0Z'
+    parts = [f'<path fill="{INK}" d="M0 0H{I}V{h}H0Z"/>',
+             f'<path fill="{WHITE}" d="{frame}"/>',
+             f'<path fill="{ORANGE}" d="M0 {h}H{I}V{I}H0Z"/>']
+    if with_text:
+        sz = 25
+        for text, fill, top in (('eth', WHITE, (h - sz) / 2 + B / 2), ('lo', INK, h + (h - sz) / 2)):
+            x = (I - advance(text, sz)) / 2 + 0.02 * sz
+            parts.append(f'<path fill="{fill}" d="{text_path(text, x, top - sz * 0.03, size=sz)}"/>')
+    open(path, 'w').write(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {I} {I}" width="{I}" height="{I}" role="img" aria-label="ethlo">'
+                          + ''.join(parts) + '</svg>\n')
+
+
+stacked(f'{OUT}/ethlo-icon-stacked.svg')
+stacked(f'{OUT}/ethlo-icon-stacked-16.svg', with_text=False)
