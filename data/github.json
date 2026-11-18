@@ -42,14 +42,14 @@
     "name": "blog",
     "html_url": "https://github.com/ethlo/blog",
     "description": "Notes from the bench: blog.ethlo.com",
-    "language": null,
+    "language": "Python",
     "topics": [],
     "fork": false,
     "archived": false,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2026-11-17T08:32:05Z",
-    "updated_at": "2026-11-17T08:32:02Z"
+    "pushed_at": "2026-11-18T06:49:22Z",
+    "updated_at": "2026-11-17T22:49:30Z"
   },
   {
     "name": "castsaver",
@@ -122,7 +122,7 @@
     "archived": false,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2026-11-16T11:32:14Z",
+    "pushed_at": "2026-11-18T06:49:44Z",
     "updated_at": "2026-11-12T15:50:19Z"
   },
   {
@@ -337,7 +337,7 @@
     "archived": false,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2026-11-16T12:41:07Z",
+    "pushed_at": "2026-11-18T06:50:08Z",
     "updated_at": "2026-11-12T13:38:44Z"
   },
   {
@@ -730,7 +730,7 @@
     "archived": false,
     "stargazers_count": 1,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T07:40:24Z",
+    "pushed_at": "2026-11-17T20:09:30Z",
     "updated_at": "2026-11-10T07:30:22Z"
   },
   {
