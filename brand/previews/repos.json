@@ -1,0 +1,12 @@
+[
+ ["r7","A high-performance Java HTTP gateway with composable routing and memory-mapped, full audit logging.","Java · Helidon Níma · WARC"],
+ ["clearsky","One view of everything that needs your attention at work.","Node.js · GitHub · Jira · Copilot"],
+ ["jsons2xsd","Highly configurable converter from JSON Schema to XML Schema (XSD).","Java · JSON Schema · XSD"],
+ ["itu","An extremely fast parser and formatter for RFC 3339 and ISO 8601 date-times.","Java · zero dependencies"],
+ ["eclipselink-maven-plugin","EclipseLink JPA in your Maven build: static weaving, canonical model and DDL generation.","Java · Maven · JPA"],
+ ["spring-tx-cache-decorator","A transaction-aware cache. Values wait for the commit, so a rollback never pollutes the cache.","Java · Spring"],
+ ["geodata","A fast, free, API-driven geo-data server, with a ready-made Docker image.","Java · OpenAPI · Docker"],
+ ["chronograph","A Java stopwatch with nested tasks, percentiles and table output.","Java · benchmarking"],
+ ["zally-maven-plugin","Lint OpenAPI specs in your Maven build with Zally rules. No extra services needed.","Java · Maven · OpenAPI"],
+ ["date-time-wars","JMH benchmarks of Java date-time parsers and formatters, ITU and java.time included.","Java · JMH"]
+]
