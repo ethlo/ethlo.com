@@ -42,14 +42,14 @@
     "name": "blog",
     "html_url": "https://github.com/ethlo/blog",
     "description": "Notes from the bench: blog.ethlo.com",
-    "language": "Python",
+    "language": "HTML",
     "topics": [],
     "fork": false,
     "archived": false,
     "stargazers_count": 0,
     "forks_count": 0,
     "pushed_at": "2026-11-18T06:49:22Z",
-    "updated_at": "2026-11-17T22:49:30Z"
+    "updated_at": "2026-11-18T07:44:34Z"
   },
   {
     "name": "castsaver",
@@ -82,7 +82,7 @@
     "archived": false,
     "stargazers_count": 9,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T07:40:20Z",
+    "pushed_at": "2026-11-18T08:43:01Z",
     "updated_at": "2026-11-10T10:59:25Z"
   },
   {
@@ -101,7 +101,7 @@
     "archived": false,
     "stargazers_count": 5,
     "forks_count": 0,
-    "pushed_at": "2026-11-13T10:20:00Z",
+    "pushed_at": "2026-11-18T08:43:18Z",
     "updated_at": "2025-09-10T12:40:36Z"
   },
   {
@@ -122,7 +122,7 @@
     "archived": false,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2026-11-18T06:49:44Z",
+    "pushed_at": "2026-11-18T10:22:33Z",
     "updated_at": "2026-11-12T15:50:19Z"
   },
   {
@@ -206,7 +206,7 @@
     "archived": false,
     "stargazers_count": 5,
     "forks_count": 3,
-    "pushed_at": "2026-11-10T11:47:40Z",
+    "pushed_at": "2026-11-18T10:17:24Z",
     "updated_at": "2026-11-04T12:26:56Z"
   },
   {
@@ -226,7 +226,7 @@
     "archived": false,
     "stargazers_count": 9,
     "forks_count": 2,
-    "pushed_at": "2026-11-10T07:40:21Z",
+    "pushed_at": "2026-11-18T08:43:05Z",
     "updated_at": "2026-11-10T10:59:22Z"
   },
   {
@@ -298,7 +298,7 @@
     "archived": false,
     "stargazers_count": 37,
     "forks_count": 17,
-    "pushed_at": "2026-11-10T07:40:18Z",
+    "pushed_at": "2026-11-18T08:43:07Z",
     "updated_at": "2026-11-10T07:29:58Z"
   },
   {
@@ -337,7 +337,7 @@
     "archived": false,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2026-11-18T06:50:45Z",
+    "pushed_at": "2026-11-18T10:25:59Z",
     "updated_at": "2026-11-12T13:38:44Z"
   },
   {
@@ -374,7 +374,7 @@
     "archived": false,
     "stargazers_count": 2,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T07:40:28Z",
+    "pushed_at": "2026-11-18T10:17:20Z",
     "updated_at": "2026-11-10T07:30:29Z"
   },
   {
@@ -428,7 +428,7 @@
     "archived": false,
     "stargazers_count": 41,
     "forks_count": 11,
-    "pushed_at": "2026-11-10T07:40:17Z",
+    "pushed_at": "2026-11-18T08:42:58Z",
     "updated_at": "2026-11-10T07:29:55Z"
   },
   {
@@ -454,7 +454,7 @@
     "archived": false,
     "stargazers_count": 0,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T07:40:26Z",
+    "pushed_at": "2026-11-18T08:43:21Z",
     "updated_at": "2026-11-10T07:30:33Z"
   },
   {
@@ -506,7 +506,7 @@
     "archived": false,
     "stargazers_count": 91,
     "forks_count": 43,
-    "pushed_at": "2026-11-10T11:28:16Z",
+    "pushed_at": "2026-11-18T08:43:24Z",
     "updated_at": "2026-11-10T11:28:20Z"
   },
   {
@@ -535,7 +535,7 @@
     "archived": false,
     "stargazers_count": 9,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T07:40:22Z",
+    "pushed_at": "2026-11-18T08:43:27Z",
     "updated_at": "2026-11-10T10:59:30Z"
   },
   {
@@ -568,7 +568,7 @@
     "archived": false,
     "stargazers_count": 2,
     "forks_count": 0,
-    "pushed_at": "2026-11-10T07:40:23Z",
+    "pushed_at": "2026-11-18T08:43:12Z",
     "updated_at": "2026-11-10T07:30:18Z"
   },
   {
@@ -730,7 +730,7 @@
     "archived": false,
     "stargazers_count": 1,
     "forks_count": 0,
-    "pushed_at": "2026-11-17T20:09:30Z",
+    "pushed_at": "2026-11-18T10:17:47Z",
     "updated_at": "2026-11-10T07:30:22Z"
   },
   {
@@ -764,7 +764,7 @@
     "archived": false,
     "stargazers_count": 4,
     "forks_count": 2,
-    "pushed_at": "2026-11-10T07:40:25Z",
+    "pushed_at": "2026-11-18T08:43:31Z",
     "updated_at": "2026-11-10T07:42:29Z"
   },
   {
@@ -838,7 +838,7 @@
     "archived": false,
     "stargazers_count": 13,
     "forks_count": 6,
-    "pushed_at": "2026-11-10T07:40:19Z",
+    "pushed_at": "2026-11-18T08:43:16Z",
     "updated_at": "2026-11-10T07:30:03Z"
   }
 ]
